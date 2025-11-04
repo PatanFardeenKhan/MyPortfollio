@@ -215,3 +215,11 @@ button:hover {
 .projects h1 {
     color: #00f6ff;
 }
+
+/* add near form styles */
+.form-feedback {
+  max-width: 500px;
+  margin: 0.5rem auto;
+  text-align: center;
+  font-weight: 600;
+}

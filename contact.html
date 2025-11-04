@@ -4,29 +4,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Your Portfolio</title>
+  <title>Contact | Patan Fardeen Khan</title>
   <link rel="icon" href="images/icons8-portfolio-50.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
   <header>
     <nav>
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </header>
 
   <section class="contact">
     <h2 class="animate">Get in Touch</h2>
-    <form class="animate" action="#" method="post">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <!-- Notice id="contact-form" and novalidate so JS handles validation -->
+    <form id="contact-form" class="animate" novalidate>
+      <input id="name" type="text" name="name" placeholder="Your Name" required />
+      <input id="email" type="email" name="email" placeholder="Your Email" required />
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
+
+    <!-- area for live feedback -->
+    <div id="form-feedback" aria-live="polite" class="form-feedback"></div>
+
+    <p style="text-align:center; margin-top:1rem; opacity:0.8;">
+      Alternatively, you can email me directly at
+      <a href="mailto:pathanfardeen555@gmail.com">pathanfardeen555@gmail.com</a>.
+    </p>
   </section>
 
   <footer>
